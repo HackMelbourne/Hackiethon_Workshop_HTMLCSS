@@ -2,76 +2,113 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Joshua Dubar | Software Engineer</title>
+    <title>Joshua Dubar</title>
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
     <nav>
-      <div>
-        <img src="./img/portrait.png" alt="Photo of me" />
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#travels">Travels</a></li>
-        </ul>
+      <div class="nav-bar">
+        <h1>Joshua Dubar</h1>
+        <div class="nav-links">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#travels">Travels</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
-    <section id="about">
-      <div class="about-us-details">
-        <h1>Joshua Dubar</h1>
-        <h2>Software Engineer</h2>
-        <h3>
-          MELB, AU | (+61) 0000 0000 |
-          <a href="mailto:nobody@gmail.com">SOMEONE@GMAIL.COM</a>
-        </h3>
-        <p>Hi, I'm Josh!</p>
-        <a target="_blank" href="https://github.com/JoshDubar"
-          ><img class="icons" src="./img/github-icon.png" alt="GitHub Icon"
-        /></a>
-      </div>
-    </section>
-    <section id="experience">
-      <h1>Experience</h1>
+    <main>
+      <section id="about">
+        <div>
+          <h1 class="section-title">
+            Hi, I'm J<a class="github-icon" href="https://github.com/joshdubar/"
+              ><img
+                width="35"
+                height="35"
+                src="./img/github-icon.png"
+                alt="github icon" /></a
+            >sh.
+          </h1>
+          <div class="about-details">
+            <h2>Software Developer, etc.</h2>
+            <h3>Melbourne, Australia | (+61) 000 0000</h3>
+          </div>
+        </div>
+      </section>
+      <section id="experience">
+        <div class="experience-wrapper">
+          <h1 class="section-title">Experience</h1>
+          <div>
+            <h2>HackMelbourne</h2>
+            <ul>
+              <li>Workshop tutor</li>
+              <li>Hackmelbourne appreciator</li>
+            </ul>
+          </div>
+          <div>
+            <h2>Localz</h2>
+            <ul>
+              <li>Software Developer doing cool programming things</li>
+              <li>also writing some html/css</li>
+              <li>writing more html/css</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="travels">
+        <h1 class="section-title travel-title">Travels</h1>
 
-      <div>
-        <h2>Presenter</h2>
-        <h3>HackMelbourne</h3>
-        <ul>
-          <li>I am delivering the html/css workshop right now 👀</li>
-        </ul>
-    </div>
-    </section>
-    <section id="travels">
-      <h1>Travels</h1>
-      <div class="my-travels">
-        <div>
-          <h2>Melbourne</h2>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d805184.6309728462!2d144.4927103406076!3d-37.971237096150745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad646b5d2ba4df7%3A0x4045675218ccd90!2sMelbourne%20VIC!5e0!3m2!1sen!2sau!4v1601020697189!5m2!1sen!2sau"
-            width="400"
-            height="300"
-            frameborder="0"
-            style="border: 0"
-            allowfullscreen=""
-            aria-hidden="false"
-            tabindex="0"
-          ></iframe>
+        <div class="travel-wrapper">
+          <div class="map-wrapper">
+            <div>
+              <h2>Auckland</h2>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d408613.0919297591!2d174.42593449906903!3d-36.85948204413638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d47fb5a9ce6fb%3A0x500ef6143a29917!2sAuckland%2C%20New%20Zealand!5e0!3m2!1sen!2sau!4v1616933445651!5m2!1sen!2sau"
+                class="map"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div>
+              <h2>Melbourne</h2>
+
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d805184.6322732749!2d144.4926853504009!3d-37.97123697758661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad646b5d2ba4df7%3A0x4045675218ccd90!2sMelbourne%20VIC!5e0!3m2!1sen!2sau!4v1616933563815!5m2!1sen!2sau"
+                class="map"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div>
+              <h2>Belgrade</h2>
+
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d181140.11998033314!2d20.282513040381442!3d44.815159727955994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7aa3d7b53fbd%3A0x1db8645cf2177ee4!2sBelgrade%2C%20Serbia!5e0!3m2!1sen!2sau!4v1616933687078!5m2!1sen!2sau"
+                class="map"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div>
+              <h2>Paris</h2>
+
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.94722657723!2d2.2770201358009565!3d48.85883773930155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sen!2sau!4v1616933722848!5m2!1sen!2sau"
+                class="map"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
         </div>
-        <div>
-          <h2>Auckland</h2>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d805184.6309728462!2d144.4927103406076!3d-37.971237096150745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad646b5d2ba4df7%3A0x4045675218ccd90!2sMelbourne%20VIC!5e0!3m2!1sen!2sau!4v1601020697189!5m2!1sen!2sau"
-            width="400"
-            height="300"
-            frameborder="0"
-            style="border: 0"
-            allowfullscreen=""
-            aria-hidden="false"
-            tabindex="0"
-          ></iframe>
-        </div>
-        
-    </section>
+      </section>
+    </main>
   </body>
 </html>
