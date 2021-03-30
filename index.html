@@ -4,15 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- the title is what appears in the tab in our web page -->
     <title>Joshua Dubar</title>
+    <!-- we can link our stylesheet here, reduces bloat in html file and if we have multiple html files can share across -->
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
+    <!-- nav section for navbar, just a declaration (do this at the end) -->
     <nav>
       <div class="nav-bar">
         <h1>Joshua Dubar</h1>
         <div class="nav-links">
           <ul>
+            <!-- href will direct us to the id in our page -->
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#travels">Travels</a></li>
@@ -20,9 +24,14 @@
         </div>
       </div>
     </nav>
+    <!-- main tag to signify this is the main content of our website -->
     <main>
+      <!-- split our website into groupings, makes things more clear -->
       <section id="about">
         <div>
+          <!-- heading tags, why use them? -->
+          <!-- add the anchor tag in line -->
+          <!-- inline styles, classes, section-title abstraction -->
           <h1 class="section-title">
             Hi, I'm J<a class="github-icon" href="https://github.com/joshdubar/"
               ><img
@@ -38,9 +47,13 @@
           </div>
         </div>
       </section>
+      <!-- second section -->
       <section id="experience">
+        <!-- wrapper for our tags, can talk about how divs help with styling and positioning -->
         <div class="experience-wrapper">
+          <!-- apply our class again, here we can introduce classes -->
           <h1 class="section-title">Experience</h1>
+          <!-- introduce lists, list-style -->
           <div>
             <h2>HackMelbourne</h2>
             <ul>
@@ -58,12 +71,17 @@
           </div>
         </div>
       </section>
+      <!-- travel section -->
       <section id="travels">
+        <!-- demonstrate multiple classes -->
         <h1 class="section-title travel-title">Travels</h1>
 
         <div class="travel-wrapper">
           <div class="map-wrapper">
             <div>
+              <!-- 250x250 -->
+              <!-- explain how iframes are embedded in the page and what they do -->
+              <!-- https://www.google.com/search?igu=1 -->
               <h2>Auckland</h2>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d408613.0919297591!2d174.42593449906903!3d-36.85948204413638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d47fb5a9ce6fb%3A0x500ef6143a29917!2sAuckland%2C%20New%20Zealand!5e0!3m2!1sen!2sau!4v1616933445651!5m2!1sen!2sau"
@@ -84,6 +102,7 @@
                 loading="lazy"
               ></iframe>
             </div>
+            <!-- add after -->
             <div>
               <h2>Belgrade</h2>
 
