@@ -1,54 +1,78 @@
+/* write when demonstrating changing all styles on the page */
 * {
+  /* set the font of all elements to be Arial (if arial does not exist then helvetica, etc.) */
   font-family: Arial, Helvetica, sans-serif;
+  /* set all elements to have a default margin + padding of 0, some elements dont have this by default */
   margin: 0;
   padding: 0;
+  /* at the end, ensure scrolling is smooth when clicking nav links */
   scroll-behavior: smooth;
 }
 
-main {
-  background: #f2f0f1;
-}
+/* h1 section title */
 .section-title {
+  /* color of the text (peach) */
   color: #e3a881;
+  /* set the font size to be nice and big */
   font-size: 64px;
+  /* apply a small border (stroke width, stroke type, stroke color) */
   border-bottom: 1px solid #e3a881;
+  /* display inline-block will ensure the box around our h1 only spans the text inside it */
   display: inline-block;
+  /* put some margin between the title and the content */
   margin-bottom: 2rem;
 }
 
+/* for every section in our page */
 section {
-  height: 100vh;
-  width: 100%;
+  /* take up a minimum of 100% of the viewport height */
+  min-height: 100vh;
+  /* center our elements, explain flexbox */
+  /* flexbox lets us position our elements within a flexible container */
+  /* we can specify a few key properties,  flex-direction, which will be demonstrated later*/
+  /* and justify-content as well as align items  */
+  /* these properties basically let us tell the browser how we want to position the elements within the box*/
   display: flex;
+  /* this specifies how we want to align our items along the main axis of the flex container (row by default)*/
   justify-content: center;
+  /* specifies how to align our items along the cross axis (other axis in this case y/column) */
   align-items: center;
 }
 
+/* align the text to be in the center (demonstrate left, right) */
 .about-details {
   text-align: center;
 }
+/* all elements get a margin of 0.5rem and 0, talk about selecting children elements */
 .about-details * {
+  /* rem is a unit relative to the font-size of the root element, good for making sure things are in nice intervals */
   margin: 0.5rem 0;
 }
 
+/* can talk about flex-direction column */
 .experience-wrapper {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
+/* add some space between elements */
 .experience-wrapper div {
   margin-top: 64px;
 }
 
+/* list-style: none removes list style (bullet points)  */
 .experience-wrapper ul {
   list-style: none;
   margin: 1rem 0;
 }
+
+/* add some space between each list element */
 .experience-wrapper li {
   margin: 0.5rem 0;
 }
 
+/* go over flexbox again */
 .travel-wrapper {
   display: flex;
   justify-content: center;
@@ -56,10 +80,12 @@ section {
   flex-direction: column;
 }
 
+/* space it a bit from the side of the screen to add some negative space */
 .travel-title {
-  margin-left: 50px;
+  margin: 0 0 0 50px;
 }
 
+/* flex-wrap will wrap elements in the div to the next line when they would otherwise overflow the element they are in */
 .map-wrapper {
   margin: 2rem;
   display: flex;
@@ -70,47 +96,54 @@ section {
 .map-wrapper div {
   margin: 2rem;
 }
+
+/* style for all the maps */
 .map {
   width: 250px;
   height: 200px;
 }
 
+/* write when refactoring to look prettier*/
+main {
+  background: rgb(241, 239, 240);
+}
+
+/* background image, background-size: cover: covers teh entire element, background-position for positioning the image */
 #about {
   background: url("./img/background.jpg");
   background-position-y: 65%;
   background-size: cover;
 }
 
-#about div,
-#about div > * {
-  background: transparent;
-}
-
-.github-icon {
-  background: transparent;
-}
-
 nav {
+  /* make the text white */
   color: white;
-  width: 100vw;
+  /* ensure that our navbar extends the entire width of the screen */
+  width: 100%;
+  /* navbar is fixed to the top of the screen */
   position: fixed;
+  /* background color of the navbar is black */
   background-color: black;
+  /* the navbar's height is 60px  */
   height: 60px;
 }
 .nav-bar {
+  /* take 100% of the height of the nav */
   height: 100%;
+  /* explain space-between, space-evenly, space-around */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* add some padding to the sides */
   padding: 0 2rem;
-  overflow: visible;
 }
 
+/* we want the nav links to take up a 250px width in the navbar */
 .nav-links {
   width: 250px;
-  margin-right: 2rem;
 }
 
+/* take up 100% width of the box defined above */
 .nav-links ul {
   list-style: none;
   display: flex;
@@ -121,5 +154,4 @@ nav {
 .nav-links a {
   text-decoration: none;
   color: white;
-  display: block;
 }
